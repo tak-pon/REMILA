@@ -1,0 +1,997 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>レミラ(Remira)美肌フォト脱毛でつるすべ肌へ！口コミ・効果を徹底解説 | ほぐし屋本舗</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=Noto+Serif+JP:wght@300;400;500&family=Noto+Sans+JP:wght@300;400&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --cream: #faf7f2;
+      --petal: #f2e8e0;
+      --blush: #e8c9bb;
+      --rose: #c8826a;
+      --deep: #7a3f2d;
+      --charcoal: #2a2220;
+      --warm-gray: #8a7f7a;
+      --light-warm: #b5a9a3;
+      --accent-gold: #c4a882;
+      --white: #ffffff;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--cream);
+      color: var(--charcoal);
+      font-family: 'Noto Serif JP', serif;
+      font-weight: 300;
+      line-height: 1.9;
+      overflow-x: hidden;
+    }
+
+    /* ── HERO ── */
+    .hero {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      background: linear-gradient(160deg, #fdf4ef 0%, #f5e6db 40%, #edddd4 100%);
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 60% 60% at 80% 20%, rgba(200,130,106,0.15) 0%, transparent 70%),
+        radial-gradient(ellipse 40% 50% at 10% 80%, rgba(196,168,130,0.12) 0%, transparent 70%);
+    }
+
+    .hero-deco {
+      position: absolute;
+      top: 0; right: 0;
+      width: 55%;
+      height: 100%;
+      overflow: hidden;
+      opacity: 0.25;
+    }
+
+    .hero-deco::before {
+      content: '';
+      position: absolute;
+      top: -10%;
+      right: -5%;
+      width: 100%;
+      height: 120%;
+      background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 800'%3E%3Cellipse cx='300' cy='400' rx='280' ry='380' fill='none' stroke='%23c8826a' stroke-width='0.5'/%3E%3Cellipse cx='300' cy='400' rx='220' ry='300' fill='none' stroke='%23c4a882' stroke-width='0.5'/%3E%3Cellipse cx='300' cy='400' rx='160' ry='220' fill='none' stroke='%23c8826a' stroke-width='0.5'/%3E%3C/svg%3E") center/contain no-repeat;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      padding: 60px 24px;
+      max-width: 780px;
+      animation: fadeUp 1.2s ease both;
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(32px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .hero-label {
+      display: inline-block;
+      font-family: 'Noto Sans JP', sans-serif;
+      font-size: 11px;
+      letter-spacing: 0.25em;
+      color: var(--rose);
+      border: 1px solid var(--blush);
+      padding: 6px 20px;
+      border-radius: 100px;
+      margin-bottom: 28px;
+    }
+
+    .hero h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(2.2rem, 6vw, 4.4rem);
+      font-weight: 300;
+      line-height: 1.2;
+      letter-spacing: 0.04em;
+      color: var(--deep);
+      margin-bottom: 16px;
+    }
+
+    .hero h1 span {
+      display: block;
+      font-family: 'Noto Serif JP', serif;
+      font-size: clamp(1.1rem, 3vw, 1.7rem);
+      font-weight: 400;
+      letter-spacing: 0.12em;
+      color: var(--charcoal);
+      margin-top: 8px;
+    }
+
+    .hero-lead {
+      font-size: clamp(0.85rem, 2vw, 1rem);
+      color: var(--warm-gray);
+      max-width: 540px;
+      margin: 20px auto 40px;
+      line-height: 2;
+    }
+
+    .hero-cta {
+      display: inline-block;
+      background: linear-gradient(135deg, var(--rose), var(--deep));
+      color: var(--white);
+      text-decoration: none;
+      padding: 16px 48px;
+      border-radius: 4px;
+      font-family: 'Noto Sans JP', sans-serif;
+      font-size: 0.9rem;
+      letter-spacing: 0.15em;
+      font-weight: 400;
+      transition: opacity 0.3s, transform 0.3s;
+      box-shadow: 0 8px 32px rgba(122,63,45,0.25);
+    }
+
+    .hero-cta:hover { opacity: 0.88; transform: translateY(-2px); }
+
+    .scroll-hint {
+      position: absolute;
+      bottom: 32px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+      font-family: 'Noto Sans JP', sans-serif;
+      font-size: 10px;
+      letter-spacing: 0.2em;
+      color: var(--light-warm);
+      animation: bounce 2s infinite;
+    }
+
+    .scroll-hint::after {
+      content: '';
+      width: 1px;
+      height: 40px;
+      background: linear-gradient(to bottom, var(--blush), transparent);
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateX(-50%) translateY(0); }
+      50%       { transform: translateX(-50%) translateY(6px); }
+    }
+
+    /* ── SECTIONS COMMON ── */
+    .section {
+      padding: 96px 24px;
+      max-width: 860px;
+      margin: 0 auto;
+    }
+
+    .section-alt {
+      background: var(--petal);
+    }
+
+    .section-alt .section {
+      max-width: 100%;
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    .section-alt .section-inner {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .section-tag {
+      font-family: 'Noto Sans JP', sans-serif;
+      font-size: 10px;
+      letter-spacing: 0.3em;
+      color: var(--rose);
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+
+    .section-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(1.8rem, 4vw, 3rem);
+      font-weight: 300;
+      color: var(--deep);
+      line-height: 1.3;
+      margin-bottom: 8px;
+    }
+
+    .section-title-ja {
+      font-family: 'Noto Serif JP', serif;
+      font-size: clamp(1rem, 2.5vw, 1.35rem);
+      font-weight: 400;
+      color: var(--charcoal);
+      letter-spacing: 0.08em;
+      margin-bottom: 36px;
+    }
+
+    .divider {
+      width: 48px;
+      height: 1px;
+      background: var(--blush);
+      margin: 24px 0;
+    }
+
+    /* ── TOC ── */
+    .toc-wrap {
+      background: var(--white);
+      border: 1px solid var(--blush);
+      border-radius: 8px;
+      padding: 36px 40px;
+      margin: 0 auto;
+      max-width: 680px;
+    }
+
+    .toc-wrap h2 {
+      font-family: 'Noto Sans JP', sans-serif;
+      font-size: 11px;
+      letter-spacing: 0.25em;
+      color: var(--rose);
+      margin-bottom: 20px;
+    }
+
+    .toc-wrap ol {
+      list-style: none;
+      counter-reset: toc;
+    }
+
+    .toc-wrap ol li {
+      counter-increment: toc;
+      display: flex;
+      align-items: baseline;
+      gap: 12px;
+      padding: 9px 0;
+      border-bottom: 1px solid var(--petal);
+    }
+
+    .toc-wrap ol li:last-child { border-bottom: none; }
+
+    .toc-wrap ol li::before {
+      content: counter(toc, decimal-leading-zero);
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1rem;
+      color: var(--blush);
+      flex-shrink: 0;
+    }
+
+    .toc-wrap ol li a {
+      font-family: 'Noto Sans JP', sans-serif;
+      font-size: 0.85rem;
+      color: var(--charcoal);
+      text-decoration: none;
+      letter-spacing: 0.05em;
+      transition: color 0.2s;
+    }
+
+    .toc-wrap ol li a:hover { color: var(--rose); }
+
+    /* ── FEATURES ── */
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 28px;
+      margin-top: 48px;
+    }
+
+    .feature-card {
+      background: var(--white);
+      border-radius: 12px;
+      padding: 40px 32px;
+      position: relative;
+      overflow: hidden;
+      transition: transform 0.35s, box-shadow 0.35s;
+    }
+
+    .feature-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 3px;
+      background: linear-gradient(90deg, var(--blush), var(--rose));
+    }
+
+    .feature-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 20px 48px rgba(122,63,45,0.12);
+    }
+
+    .feature-num {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 3.5rem;
+      font-weight: 300;
+      color: var(--petal);
+      line-height: 1;
+      margin-bottom: 16px;
+    }
+
+    .feature-card h3 {
+      font-family: 'Noto Serif JP', serif;
+      font-size: 1rem;
+      font-weight: 500;
+      color: var(--deep);
+      margin-bottom: 14px;
+      letter-spacing: 0.06em;
+    }
+
+    .feature-card p {
+      font-family: 'Noto Sans JP', sans-serif;
+      font-size: 0.82rem;
+      color: var(--warm-gray);
+      line-height: 1.9;
+    }
+
+    /* ── EFFECTS ── */
+    .effects-list {
+      display: flex;
+      flex-direction: column;
+      gap: 1px;
+      margin-top: 48px;
+    }
+
+    .effect-item {
+      display: grid;
+      grid-template-columns: 64px 1fr;
+      gap: 28px;
+      align-items: start;
+      padding: 36px 0;
+      border-bottom: 1px solid var(--blush);
+    }
+
+    .effect-item:first-child { border-top: 1px solid var(--blush); }
+
+    .effect-icon {
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--petal), var(--blush));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.4rem;
+      flex-shrink: 0;
+    }
+
+    .effect-item h3 {
+      font-family: 'Noto Serif JP', serif;
+      font-size: 1.05rem;
+      font-weight: 500;
+      color: var(--deep);
+      margin-bottom: 10px;
+      letter-spacing: 0.06em;
+    }
+
+    .effect-item p {
+      font-family: 'Noto Sans JP', sans-serif;
+      font-size: 0.85rem;
+      color: var(--warm-gray);
+      line-height: 1.9;
+    }
+
+    /* ── PROCEDURE ── */
+    .steps {
+      position: relative;
+      margin-top: 48px;
+      padding-left: 32px;
+    }
+
+    .steps::before {
+      content: '';
+      position: absolute;
+      left: 15px;
+      top: 12px;
+      bottom: 12px;
+      width: 1px;
+      background: linear-gradient(to bottom, var(--blush), transparent);
+    }
+
+    .step {
+      position: relative;
+      padding: 0 0 48px 40px;
+    }
+
+    .step:last-child { padding-bottom: 0; }
+
+    .step-dot {
+      position: absolute;
+      left: -17px;
+      top: 4px;
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background: var(--white);
+      border: 2px solid var(--rose);
+    }
+
+    .step-num {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 0.85rem;
+      color: var(--rose);
+      letter-spacing: 0.15em;
+      margin-bottom: 8px;
+    }
+
+    .step h3 {
+      font-family: 'Noto Serif JP', serif;
+      font-size: 1.05rem;
+      font-weight: 500;
+      color: var(--charcoal);
+      margin-bottom: 10px;
+    }
+
+    .step p, .step ul {
+      font-family: 'Noto Sans JP', sans-serif;
+      font-size: 0.85rem;
+      color: var(--warm-gray);
+      line-height: 1.9;
+    }
+
+    .step ul {
+      list-style: none;
+      margin-top: 10px;
+    }
+
+    .step ul li {
+      padding-left: 16px;
+      position: relative;
+      margin-bottom: 4px;
+    }
+
+    .step ul li::before {
+      content: '—';
+      position: absolute;
+      left: 0;
+      color: var(--blush);
+    }
+
+    /* ── SALON INFO ── */
+    .salon-card {
+      background: var(--white);
+      border-radius: 16px;
+      padding: 52px 48px;
+      box-shadow: 0 2px 40px rgba(122,63,45,0.07);
+      margin-top: 48px;
+    }
+
+    .salon-info-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 32px;
+      margin-top: 32px;
+    }
+
+    .salon-info-item label {
+      display: block;
+      font-family: 'Noto Sans JP', sans-serif;
+      font-size: 10px;
+      letter-spacing: 0.25em;
+      color: var(--rose);
+      margin-bottom: 8px;
+    }
+
+    .salon-info-item p {
+      font-family: 'Noto Serif JP', serif;
+      font-size: 0.9rem;
+      color: var(--charcoal);
+      line-height: 1.7;
+    }
+
+    .salon-info-item a {
+      color: var(--rose);
+      text-decoration: none;
+    }
+
+    /* ── REVIEWS ── */
+    .reviews-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+      margin-top: 48px;
+    }
+
+    .review-card {
+      background: var(--white);
+      border-radius: 12px;
+      padding: 36px 32px;
+      position: relative;
+    }
+
+    .review-card::before {
+      content: '"';
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 5rem;
+      color: var(--petal);
+      position: absolute;
+      top: 10px;
+      left: 20px;
+      line-height: 1;
+    }
+
+    .review-stars {
+      display: flex;
+      gap: 3px;
+      margin-bottom: 16px;
+    }
+
+    .review-stars span {
+      color: var(--accent-gold);
+      font-size: 0.9rem;
+    }
+
+    .review-card p {
+      font-family: 'Noto Sans JP', sans-serif;
+      font-size: 0.84rem;
+      color: var(--charcoal);
+      line-height: 1.9;
+      position: relative;
+      z-index: 1;
+    }
+
+    .review-author {
+      font-family: 'Noto Sans JP', sans-serif;
+      font-size: 0.78rem;
+      color: var(--light-warm);
+      margin-top: 16px;
+    }
+
+    /* ── FAQ ── */
+    .faq-list {
+      margin-top: 48px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .faq-item {
+      background: var(--white);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .faq-q {
+      display: flex;
+      align-items: baseline;
+      gap: 16px;
+      padding: 22px 28px;
+      cursor: pointer;
+      user-select: none;
+    }
+
+    .faq-q-mark {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.5rem;
+      color: var(--rose);
+      flex-shrink: 0;
+      line-height: 1;
+    }
+
+    .faq-q-text {
+      font-family: 'Noto Serif JP', serif;
+      font-size: 0.95rem;
+      font-weight: 500;
+      color: var(--charcoal);
+      flex: 1;
+    }
+
+    .faq-toggle {
+      font-size: 1.2rem;
+      color: var(--blush);
+      margin-left: auto;
+      transition: transform 0.3s;
+      flex-shrink: 0;
+    }
+
+    .faq-item.open .faq-toggle { transform: rotate(45deg); }
+
+    .faq-a {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s ease, padding 0.3s;
+    }
+
+    .faq-item.open .faq-a { max-height: 300px; }
+
+    .faq-a-inner {
+      display: flex;
+      gap: 16px;
+      padding: 0 28px 24px;
+    }
+
+    .faq-a-mark {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.5rem;
+      color: var(--accent-gold);
+      flex-shrink: 0;
+      line-height: 1;
+    }
+
+    .faq-a p {
+      font-family: 'Noto Sans JP', sans-serif;
+      font-size: 0.84rem;
+      color: var(--warm-gray);
+      line-height: 1.9;
+    }
+
+    /* ── SUMMARY ── */
+    .summary-box {
+      background: linear-gradient(135deg, var(--deep) 0%, #5a2a1a 100%);
+      border-radius: 16px;
+      padding: 64px 52px;
+      text-align: center;
+      margin-top: 0;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .summary-box::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 50% 50% at 20% 30%, rgba(200,130,106,0.2) 0%, transparent 70%),
+        radial-gradient(ellipse 40% 40% at 80% 70%, rgba(196,168,130,0.15) 0%, transparent 70%);
+    }
+
+    .summary-box * { position: relative; z-index: 1; }
+
+    .summary-box .section-tag { color: var(--blush); }
+
+    .summary-box .section-title { color: var(--white); }
+
+    .summary-box .section-title-ja { color: rgba(255,255,255,0.75); }
+
+    .summary-box p {
+      font-family: 'Noto Sans JP', sans-serif;
+      font-size: 0.88rem;
+      color: rgba(255,255,255,0.7);
+      max-width: 540px;
+      margin: 0 auto 36px;
+      line-height: 2;
+    }
+
+    .summary-box .hero-cta {
+      background: rgba(255,255,255,0.15);
+      border: 1px solid rgba(255,255,255,0.4);
+      box-shadow: none;
+      backdrop-filter: blur(8px);
+    }
+
+    .summary-box .hero-cta:hover {
+      background: rgba(255,255,255,0.25);
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--charcoal);
+      color: var(--light-warm);
+      text-align: center;
+      padding: 40px 24px;
+      font-family: 'Noto Sans JP', sans-serif;
+      font-size: 0.78rem;
+      letter-spacing: 0.1em;
+    }
+
+    footer a { color: var(--blush); text-decoration: none; }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 600px) {
+      .salon-card { padding: 36px 28px; }
+      .summary-box { padding: 52px 28px; }
+      .toc-wrap { padding: 28px 24px; }
+      .steps { padding-left: 16px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-deco"></div>
+    <div class="hero-content">
+      <p class="hero-label">Beauty Photo Hair Removal</p>
+      <h1>
+        Remira
+        <span>美肌フォト脱毛で、つるすべ肌へ。</span>
+      </h1>
+      <p class="hero-lead">
+        脱毛しながら美肌へ。IPL光技術で毛の悩みも肌の悩みも、
+        ひとつひとつ丁寧にアプローチするフォト脱毛をご紹介します。
+      </p>
+      <a href="#remira_saloninfo" class="hero-cta">ほぐし屋本舗で体験する</a>
+    </div>
+    <div class="scroll-hint">SCROLL</div>
+  </section>
+
+  <!-- TOC -->
+  <div style="padding: 64px 24px; background: var(--cream);">
+    <div class="toc-wrap">
+      <h2>CONTENTS — 目次</h2>
+      <ol>
+        <li><a href="#remira_overview">レミラ美肌フォト脱毛とは？3つの特徴</a></li>
+        <li><a href="#remira_effects">期待できる効果</a></li>
+        <li><a href="#remira_procedure">施術の流れ</a></li>
+        <li><a href="#remira_saloninfo">ほぐし屋本舗のサロン情報</a></li>
+        <li><a href="#remira_reviews">口コミ・評判</a></li>
+        <li><a href="#faq">よくある質問</a></li>
+        <li><a href="#summary">まとめ</a></li>
+      </ol>
+    </div>
+  </div>
+
+  <!-- FEATURES -->
+  <div class="section-alt">
+    <div class="section" id="remira_overview">
+      <p class="section-tag">Features</p>
+      <h2 class="section-title">Remira</h2>
+      <p class="section-title-ja">美肌フォト脱毛とは？ 3つの特徴</p>
+      <p style="font-family:'Noto Sans JP',sans-serif;font-size:0.87rem;color:var(--warm-gray);line-height:2;">
+        レミラの美肌フォト脱毛は、脱毛効果に加えて肌質改善も同時に叶える光脱毛です。
+        「自己処理が面倒」「肌への負担が気になる」そんなお悩みに向き合うため、3つのこだわりをもって施術しています。
+      </p>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-num">01</div>
+          <h3>美肌効果も同時に</h3>
+          <p>IPL（Intense Pulsed Light）がメラニン色素にアプローチ。コラーゲン生成を促し、ハリと透明感ある肌へと導きます。脱毛しながら肌がきれいになっていく感覚を実感できます。</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-num">02</div>
+          <h3>痛みが少ない施術</h3>
+          <p>SHR（Super Hair Removal）方式を採用。低エネルギーで広範囲をやさしく照射するため、従来脱毛より痛みが少ないとされています。冷却機能により、敏感な方でも安心して受けていただけます。</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-num">03</div>
+          <h3>一人ひとりに合わせた施術</h3>
+          <p>施術前のカウンセリングで肌状態や毛質を丁寧に確認。個人差に合わせた出力・ケア方法で、肌トラブルのリスクを最小限に抑えながら理想の肌を目指します。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- EFFECTS -->
+  <div class="section" id="remira_effects">
+    <p class="section-tag">Effects</p>
+    <h2 class="section-title">Expected Results</h2>
+    <p class="section-title-ja">期待できる3つの効果</p>
+    <div class="effects-list">
+      <div class="effect-item">
+        <div class="effect-icon">✨</div>
+        <div>
+          <h3>肌のトーンアップ</h3>
+          <p>IPLがメラニン色素に働きかけ、肌のターンオーバーをサポート。繰り返し施術を受けることで、くすみが和らいだ明るい肌に整えていきます。</p>
+        </div>
+      </div>
+      <div class="effect-item">
+        <div class="effect-icon">🌸</div>
+        <div>
+          <h3>毛穴の目立ちにくい肌へ</h3>
+          <p>コラーゲン生成の促進により、毛穴まわりの肌が引き締まり、毛穴を目立ちにくくする効果が期待できます。なめらかな素肌感が続きます。</p>
+        </div>
+      </div>
+      <div class="effect-item">
+        <div class="effect-icon">🌿</div>
+        <div>
+          <h3>自己処理の負担を軽減</h3>
+          <p>毛根へのアプローチで毛の成長を抑制し、施術を重ねるごとに毛が細く・薄くなります。カミソリや毛抜きによる肌荒れの悩みから解放されます。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PROCEDURE -->
+  <div class="section-alt">
+    <div class="section" id="remira_procedure">
+      <p class="section-tag">Flow</p>
+      <h2 class="section-title">How It Works</h2>
+      <p class="section-title-ja">施術の流れ — 5ステップ</p>
+      <div class="steps">
+        <div class="step">
+          <div class="step-dot"></div>
+          <p class="step-num">STEP 01</p>
+          <h3>カウンセリング</h3>
+          <p>専門スタッフが肌状態・毛質・ご希望を丁寧にヒアリングします。アレルギーや肌トラブルの履歴も確認し、一人ひとりに合った施術プランをご提案します。</p>
+        </div>
+        <div class="step">
+          <div class="step-dot"></div>
+          <p class="step-num">STEP 02</p>
+          <h3>準備（着替え・肌状態確認）</h3>
+          <p>施術室へ移動し、施術着にお着替えいただきます。施術部位のメイクを落とし、肌の状態を再度確認します。</p>
+        </div>
+        <div class="step">
+          <div class="step-dot"></div>
+          <p class="step-num">STEP 03</p>
+          <h3>光照射（施術本体）</h3>
+          <p>施術部位にジェルを塗布し、IPL/SHR方式で光を照射します。目の保護のため専用ゴーグルを着用していただきます。痛みに配慮した冷却ケアも行います。</p>
+        </div>
+        <div class="step">
+          <div class="step-dot"></div>
+          <p class="step-num">STEP 04</p>
+          <h3>アフターケアのご説明</h3>
+          <p>施術後の肌状態を確認し、保湿方法や注意事項を丁寧にお伝えします。ご不明な点はお気軽にご質問ください。</p>
+        </div>
+        <div class="step">
+          <div class="step-dot"></div>
+          <p class="step-num">STEP 05</p>
+          <h3>施術後の注意事項</h3>
+          <p>施術直後はデリケートな状態です。以下の点にご注意ください。</p>
+          <ul>
+            <li>施術部位を強く擦らない</li>
+            <li>十分な保湿を心がける</li>
+            <li>日焼け止めを使用する</li>
+            <li>激しい運動・飲酒を当日は控える</li>
+            <li>入浴はシャワー程度に留める</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SALON INFO -->
+  <div class="section" id="remira_saloninfo">
+    <p class="section-tag">Salon</p>
+    <h2 class="section-title">Hogushiya Honpo</h2>
+    <p class="section-title-ja">ほぐし屋本舗 — サロン情報</p>
+    <div class="salon-card">
+      <div class="salon-info-grid">
+        <div class="salon-info-item">
+          <label>ADDRESS</label>
+          <p>〒192-0084<br>東京都八王子市三崎町4-11<br>トーネンビル 6F</p>
+        </div>
+        <div class="salon-info-item">
+          <label>TEL</label>
+          <p><a href="tel:0426203395">042-620-3395</a></p>
+        </div>
+        <div class="salon-info-item">
+          <label>ACCESS</label>
+          <p>JR八王子駅より<br>徒歩約3分</p>
+        </div>
+        <div class="salon-info-item">
+          <label>ATMOSPHERE</label>
+          <p>リラックスできる落ち着いた空間。清潔感ある施術室で、ゆったりとした時間をお過ごしください。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- REVIEWS -->
+  <div class="section-alt">
+    <div class="section" id="remira_reviews">
+      <p class="section-tag">Reviews</p>
+      <h2 class="section-title">Voices</h2>
+      <p class="section-title-ja">お客様の声・口コミ</p>
+      <div class="reviews-grid">
+        <div class="review-card">
+          <div class="review-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+          <p>痛みを心配していましたが、思っていた以上に少なくて驚きました。スタッフの方が施術中も声をかけてくださり、安心して受けられました。</p>
+          <p class="review-author">30代女性</p>
+        </div>
+        <div class="review-card">
+          <div class="review-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+          <p>何度か通うにつれて毛が確実に薄くなってきました。肌もなんとなくトーンが上がった気がします。カウンセリングが丁寧で信頼できます。</p>
+          <p class="review-author">40代女性</p>
+        </div>
+        <div class="review-card">
+          <div class="review-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>☆</span></div>
+          <p>自己処理の手間が本当に減りました。施術後の肌がしっとりしていて、脱毛だけでなく美肌効果も感じています。また来月も予約しました！</p>
+          <p class="review-author">20代女性</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FAQ -->
+  <div class="section" id="faq">
+    <p class="section-tag">FAQ</p>
+    <h2 class="section-title">Questions</h2>
+    <p class="section-title-ja">よくある質問</p>
+    <div class="faq-list" itemscope itemtype="https://schema.org/FAQPage">
+
+      <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <span class="faq-q-mark">Q</span>
+          <span class="faq-q-text" itemprop="name">レミラの脱毛は本当に痛くないですか？</span>
+          <span class="faq-toggle">+</span>
+        </div>
+        <div class="faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+          <div class="faq-a-inner">
+            <span class="faq-a-mark">A</span>
+            <p itemprop="text">SHR方式は低エネルギーで広範囲を照射するため、従来方式より痛みが少ないとされています。冷却機能も搭載しており、肌への負担を抑えています。ただし痛みには個人差があるため、施術中に感じた際はすぐにスタッフへお伝えください。</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <span class="faq-q-mark">Q</span>
+          <span class="faq-q-text" itemprop="name">何回くらい施術を受けると効果が出ますか？</span>
+          <span class="faq-toggle">+</span>
+        </div>
+        <div class="faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+          <div class="faq-a-inner">
+            <span class="faq-a-mark">A</span>
+            <p itemprop="text">効果の出方には個人差があります。毛周期に合わせた施術間隔が大切なため、カウンセリング時にお肌・毛質に合った回数と期間を詳しくご説明します。</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <span class="faq-q-mark">Q</span>
+          <span class="faq-q-text" itemprop="name">施術後に肌トラブルが起きた場合はどうすればいいですか？</span>
+          <span class="faq-toggle">+</span>
+        </div>
+        <div class="faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+          <div class="faq-a-inner">
+            <span class="faq-a-mark">A</span>
+            <p itemprop="text">万が一施術後に肌トラブルが起きた際は、すぐにサロンへご連絡ください。専門スタッフが丁寧に対応いたします。自己判断での処置はせず、まずはご相談ください。</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- SUMMARY / CTA -->
+  <div style="padding: 0 24px 96px; background: var(--cream);" id="summary">
+    <div class="summary-box">
+      <p class="section-tag">Summary</p>
+      <h2 class="section-title">Remira</h2>
+      <p class="section-title-ja">脱毛と美肌を、同時に。</p>
+      <p>
+        レミラの美肌フォト脱毛は、毛の悩みだけでなく肌質改善も叶える新感覚のフォト脱毛です。
+        痛みに配慮した施術とスタッフの丁寧なカウンセリングで、あなたの理想の肌へ。
+        まずはほぐし屋本舗へお気軽にお問い合わせください。
+      </p>
+      <a href="tel:0426203395" class="hero-cta">📞 042-620-3395 に電話する</a>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© ほぐし屋本舗 — 〒192-0084 東京都八王子市三崎町4-11 トーネンビル6F</p>
+  </footer>
+
+  <script>
+    function toggleFaq(el) {
+      const item = el.closest('.faq-item');
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+      if (!isOpen) item.classList.add('open');
+    }
+
+    // Scroll fade-in
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.style.opacity = '1';
+          e.target.style.transform = 'translateY(0)';
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.feature-card, .effect-item, .step, .review-card, .faq-item').forEach(el => {
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(24px)';
+      el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+      observer.observe(el);
+    });
+  </script>
+</body>
+</html>
